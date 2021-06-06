@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const port = 3000
 
 //Server
-app.listen(3000, () => console.log('Server live on http://localhost:3000'))
+app.listen(port, () => console.log(`Server live on http://localhost:${port}`))
 
 //Public Access
 const publicpath = path.resolve(__dirname, '../public') 
