@@ -4,11 +4,14 @@ const path = require('path')
 const port = 3000
 
 //Server
-app.listen(port, () => console.log(`Server live on http://localhost:${port}`))
+app.set("port",process.env.PORT || port)
+app.listen(app.get("port"),() => console.log("Server live on http://localhost:"+app.get("port")))
 
 //Public Access
-const publicpath = path.resolve(__dirname, '../public') 
-app.use(express.static(publicpath))
+const publicPath = path.resolve(__dirname, '../public') 
+app.use(express.static(publicPath))
 
 //Routes
 app.use(require('./routes/web'))
+
+

@@ -1,0 +1,126 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body{
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--gris-claro);
+}
+
+main img{
+   width: 100%;
+   max-width: 500px;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+article{
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid var(--gris-claro);
+    background-color: white;
+    max-height: 600px;
+    max-width: 400px;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.precio p{
+     font-size: 1.125em;
+     width: 60%;
+}
+
+.precio .descuento{
+    color: var(--verde);
+    font-size: .75em;
+    width: 40%;
+}
+
+h2{
+    color: var(--gris-oscuro);
+}
+
+h3{
+    font-size: .75em;
+    color: var(--gris-oscuro);
+    font-weight: 400;
+    margin: 0;
+}
+
+article p{
+   margin: 0;
+   font-size: 1em;
+}
+
+.envio{
+    color: var(--verde);
+    font-size: 1em;
+    padding: .25em 0 0 .25em;
+    border: 1px solid var(--verde);
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    text-align:start ;
+    margin-bottom: .25em;
+}
+
+.info{
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+}
+
+@media (max-width: 769px)  {
+    .info h3{
+        display: none;
+    }   
+   }
+   
+@media (min-width: 769px)  {
+    .productos article{
+           box-shadow: 0px 0px 10px rgb(100, 100, 100);
+           margin: 0 1em;
+       }   
+   
+   
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos{
+           display: flex;
+           margin: 2em;
+           justify-content: space-around;
+       }
+
+    .titulo h2{
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    }
+
+   }
+   
+   

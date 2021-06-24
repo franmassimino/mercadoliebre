@@ -1,0 +1,188 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body{
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--gris-claro);
+}
+
+header{
+    background-color: var(--amarillo);
+    margin: 0;
+    width: 100vw;
+    padding: 1em 7.5%;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.burger-menu i{
+    background: var(--celeste);
+    padding: .5em;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.top-header-main{
+    display: flex;
+    align-items: center;
+}
+
+.searchbar{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.searchbar input{
+   width: 80%;
+   max-width: 200px;
+   border: none;
+   border-radius: .1em ;
+   padding: .5em;
+   outline: none;
+}
+
+.searchbar button{
+    width: 20%;
+    border: none;
+    border-radius: .1em ;
+    padding: .5em;
+    background: white;
+    color: var(--gris-oscuro);
+    margin-left: -5px;
+    border-left: .5px solid  var(--gris-claro);
+    max-width: 100px;
+ }
+
+
+.logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img{
+    width: 80%;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.top-header-cta{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.banner{
+ width: 100vw;
+ margin: 0;
+ padding: 0;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 769px)  {
+
+    .burger-menu{
+        display: none;
+    }  
+    .menu{
+        display:flex ;
+    }
+
+    nav ul li{
+        list-style: none;
+    }
+
+    nav ul{
+        padding-left: 0;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.75em;
+    }
+    
+    li i{
+        font-size: .75em;
+        margin-left: .5em;
+    }
+    
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu ul li{
+        margin: 0 1em;
+    }
+
+    #user{
+        margin-left: auto;
+    }
+
+    .bottom-header{
+        display: flex;
+    }
+
+    .top-header{
+        display: flex;
+        margin-bottom: 1em;
+        padding: .5em;
+    }
+
+    .top-header-main{
+        width:66%;
+    }
+
+    .searchbar{
+        justify-content: center;
+    }
+
+    .searchbar input{
+        max-width: 1200px;
+    }
+
+    .top-header-cta{
+        margin: 0;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: .75em;
+    }
+
+
+   }

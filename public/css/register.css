@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: 'roboto';
+    overflow-x: hidden;
+}
+
+main{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size:2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.formulario-registro{
+    padding: 1em;
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+
+form input{
+    height: 2.5em;
+    margin: 2em 0;
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1.5em;
+}
+
+fieldset{
+    padding: 0;
+    border: none;  
+}
+
+fieldset.usuario{
+    display: flex;
+    align-items: center;
+}
+
+fieldset.intereses{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset.botones{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 1em 0;
+   max-width: 500px;
+   align-self: center;
+   margin: 2em auto;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+fieldset.botones button{
+    width: 49%;
+    border: none;
+    background: var(--celeste);
+    color: white;
+    height: 3em;
+    border-radius: .5em;
+
+
+}
+
+
+
+fieldset input{
+    margin: 1em 1.5em;
+    width: auto;
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1024px){
+    .formulario-registro{
+        width: 100%;
+        display: flex;
+        justify-content:center ;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+    }
+}
