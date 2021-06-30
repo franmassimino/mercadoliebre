@@ -112,7 +112,7 @@ article p{
     .productos article{
            margin: 0 1em;
            max-width: 300px;
-           transition: all .5s ease;
+           transition: all .3s ease;
        }   
 
     .productos article:hover{
@@ -140,7 +140,7 @@ article p{
         transition: all .3s ease;
     }
 
-    .info h3:hover{
+    .productos article:hover .info h3{
         opacity: 1;
     }
 
