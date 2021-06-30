@@ -22,18 +22,18 @@ h2{
 }
 
 .formulario-registro{
-    padding: 1em;
+    padding: 5vh 1em;
     width: 80%;
 }
 
-form{
+.formulario-registro form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
 }
 
-form input{
+.formulario-registro form input.text{
     height: 2.5em;
     margin: 2em 0;
     width: 100%;
@@ -41,6 +41,7 @@ form input{
     border: none;
     border-radius: .5em;
     padding: .5em;
+    outline: none;
 }
 
 label{
@@ -75,7 +76,7 @@ fieldset.botones{
    margin: 2em auto;
 }
 
-button a{
+.formulario-registro button a{
     text-decoration: none;
     color: white;
 }
@@ -87,10 +88,13 @@ fieldset.botones button{
     color: white;
     height: 3em;
     border-radius: .5em;
-
-
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
+fieldset.botones button:hover{
+     background-color: #0022AA;
+}
 
 
 fieldset input{
@@ -102,6 +106,19 @@ fieldset input{
     display: flex;
     align-items: center;
 }
+div.opcion input{
+    width: 15px;
+    height: 15px;
+    margin-right: 1em;
+}
+
+input.file{
+    margin: 1em 0;
+}
+
+#foto-usuario{
+    font-size: 12.5px;
+}
 
 @media (min-width: 1024px){
     .formulario-registro{
@@ -112,4 +129,5 @@ fieldset input{
         align-items: center;
         max-width: 1000px;
     }
+
 }

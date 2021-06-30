@@ -21,7 +21,7 @@ h2{
     margin-top: 1em;
 }
 
-form{
+.formulario-login form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ form{
     width: 100%;
 }
 
-form input{
+.formulario-login form input{
     height: 2.5em;
     margin: 2em 0;
     width: 100%;
@@ -37,19 +37,20 @@ form input{
     border: none;
     border-radius: .5em;
     padding: .5em;
+    outline: none;
 }
 
 .formulario-login{
-    padding: 1em;
+    padding:5vh 1em;
     width: 80%;
 }
 
-button a{
+.formulario-login button a{
     text-decoration: none;
     color: white;
 }
 
-form button{
+.formulario-login form button{
     width: 100%;
     border: none;
     background: var(--celeste);
@@ -58,8 +59,14 @@ form button{
     border-radius: .5em;
     margin: 2em auto;
     max-width: 700px;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
-form a{
+.formulario-login form button:hover{
+    background-color: #0022AA;
+}
+
+.formulario-login form a{
     width: 100%;
 }

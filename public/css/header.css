@@ -13,6 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--gris-claro);
+    overflow-x: hidden;
 }
 
 header{
@@ -22,6 +23,8 @@ header{
     padding: 1em 7.5%;
     padding-bottom: 0;
     box-sizing: border-box;
+    max-width: 100vw;
+
 }
 
 figure{
@@ -52,7 +55,7 @@ figure{
 }
 
 .searchbar{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -77,11 +80,16 @@ figure{
     margin-left: -5px;
     border-left: .5px solid  var(--gris-claro);
     max-width: 100px;
+    cursor: pointer;
  }
+
+.top-header-main a{
+    width: 50%;
+}
 
 
 .logo{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -108,6 +116,12 @@ figure{
     width: 100%;
 }
 
+.search{
+    display: flex;
+    width: 70%;
+    align-self: center;
+}
+
 
 
 
@@ -124,13 +138,14 @@ figure{
         list-style: none;
     }
 
+
     nav ul{
         padding-left: 0;
     }
     
     nav a{
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
         font-size: 0.75em;
     }
     
@@ -165,6 +180,10 @@ figure{
 
     .top-header-main{
         width:66%;
+    }
+
+    .search{
+        margin-left: 6vw;
     }
 
     .searchbar{
